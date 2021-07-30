@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/whysapp/static/js/main.99192cfe.chunk.js",
+    "main.js.map": "/whysapp/static/js/main.99192cfe.chunk.js.map",
+    "runtime-main.js": "/whysapp/static/js/runtime-main.76ba4c5f.js",
+    "runtime-main.js.map": "/whysapp/static/js/runtime-main.76ba4c5f.js.map",
+    "static/js/2.6a3a9af9.chunk.js": "/whysapp/static/js/2.6a3a9af9.chunk.js",
+    "static/js/2.6a3a9af9.chunk.js.map": "/whysapp/static/js/2.6a3a9af9.chunk.js.map",
+    "index.html": "/whysapp/index.html",
+    "static/js/2.6a3a9af9.chunk.js.LICENSE.txt": "/whysapp/static/js/2.6a3a9af9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76ba4c5f.js",
+    "static/js/2.6a3a9af9.chunk.js",
+    "static/js/main.99192cfe.chunk.js"
+  ]
+}
