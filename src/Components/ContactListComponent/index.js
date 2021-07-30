@@ -13,11 +13,11 @@ const ContactListComponent = (props) => {
   return (
     <Container>
       <ProfileInfoContainer>
-        <ProfileInfoImage src="/Images/profile-avatar.png" />
+        <ProfileInfoImage src={process.env.PUBLIC_URL+"/Images/profile-avatar.png"} />
       </ProfileInfoContainer>
       <SearchBoxComponent>
         <SearchBoxContainerComponent>
-          <SearchIcon src="/Images/search-icon.png" />
+          <SearchIcon src={process.env.PUBLIC_URL+"/Images/search-icon.png"} />
           <SearchInput placeholder="Search here to chat . .. ..." />
         </SearchBoxContainerComponent>
       </SearchBoxComponent>

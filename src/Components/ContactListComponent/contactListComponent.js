@@ -6,7 +6,7 @@ export const Container = styled.div`
   background: #7fe7dc;
   color: black;
   flex: 1.5;
-  height: 100%;
+  height: 1vh;
 `;
 export const ProfileInfoContainer = styled.div`
   display: flex;

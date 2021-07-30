@@ -56,7 +56,7 @@ const ConversationalComponent = (props) => {
   return (
     <Container>
       <ProfileHeader>
-        <ProfileIcon src={selectedChat.profileImg} />
+        <ProfileIcon src={process.env.PUBLIC_URL + selectedChat.profileImg} />
         {selectedChat.name}
       </ProfileHeader>
       <MessageContainer>
@@ -77,7 +77,7 @@ const ConversationalComponent = (props) => {
             />
           )}
           <EmojiImage
-            src="Images/emoji-image.png"
+            src={process.env.PUBLIC_URL + "/Images/emoji-image.png"}
             onClick={handleEmojiIconClick}
           />
           <SearchInput

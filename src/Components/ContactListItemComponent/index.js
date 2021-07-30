@@ -16,7 +16,7 @@ const ContactListItem = (props) => {
   };
   return (
     <ContactListItemContainer onClick={OnContactListclick}>
-      <ProfileIcon src={contactData.profileImg} />
+      <ProfileIcon src={process.env.PUBLIC_URL+contactData.profileImg} />
       <ContactDetailsComponent>
         <ContactInfo>
           <ContactName>{contactData.name}</ContactName>
