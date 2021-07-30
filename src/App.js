@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import styled from "styled-components";
+import ContactListComponent from "./Components/ContactListComponent";
+import ConversationalComponent from "./Components/ConversationComponent";
 
-function App() {
+const ScreenContainer = styled.div`
+background: black;
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+`;
+const MainContainer = styled.div`
+  width: 1500px;
+  background: #ced7d8;
+  font-family: "WindSong", cursive;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  color: black;
+  font-weight: bold;
+  margin: auto;
+`;
+const Placeholder = styled.div`
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background: #efefef;
+  gap: 10px;
+  span {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+  }
+`;
+const PlacehokderImage = styled.img``;
+const App = () => {
+  const [selectedChat, setSelectedChat] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScreenContainer>
+      <MainContainer>
+        <ContactListComponent setSelectedChat={setSelectedChat} />
+        {selectedChat ? (
+          <ConversationalComponent selectedChat={selectedChat} />
+        ) : (
+          <Placeholder>
+            <PlacehokderImage src="/Images/cell-tower.png" />
+            <span>Keep Your Phone Conected</span>
+            Have funn with your friends circle.
+          </Placeholder>
+        )}
+      </MainContainer>
+    </ScreenContainer>
   );
-}
+};
 
 export default App;
