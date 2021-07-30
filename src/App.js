@@ -5,7 +5,7 @@ import ConversationalComponent from "./Components/ConversationComponent";
 
 const ScreenContainer = styled.div`
 background: black;
-height: 1vh;
+height: 100%;
 width: 100%;
 margin: 0px;
 padding: 0px;
@@ -47,7 +47,7 @@ const App = () => {
           <ConversationalComponent selectedChat={selectedChat} />
         ) : (
           <Placeholder>
-            <PlaceholderImage src="/Images/cell-tower.png" />
+            <PlaceholderImage src={process.env.PUBLIC_URL+"/Images/cell-tower.png"} />
             <span>Keep Your Phone Conected</span>
             Have funn with your friends circle.
           </Placeholder>

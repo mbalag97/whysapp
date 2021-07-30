@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   color: black;
   flex: 3;
-  height: 1vh;
+  height: 100%;
 `;
 export const ProfileHeader = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export const EmojiImage = styled.img`
 export const MessageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 1vh;
+  height: 100%;
   overflow-y: auto;
 `;
 export const MessageDiv = styled.div`
